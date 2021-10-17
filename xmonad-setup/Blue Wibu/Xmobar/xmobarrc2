@@ -11,13 +11,13 @@
 Config { 
 
    -- appearance
-   -- font            = "xft:Noto Sans CJK SC:pixelsize=13:Bold:antialias=true" 
-   -- font            = "xft:MiriamMonoCLM:pixelsize=14:Bold:antialias=true" 
-   -- font            = "xft:JetBrainsMono Nerd Font:pixelsize=11:Bold:antialias=true" 
-     font            = "xft:Font Awesome 5 Free Solid:pixelsize=13:Solid:antialias=true,JetBrainsMono Nerd Font:pixelsize=11:Bold:antialias=true"
-   , additionalFonts = ["xft:MesloLGL Nerd Font:pixelsize=13:Regular:antialias=true"
-                       ,"xft:Font Awesome 5 Free Solid:pixelsize=13:Solid:antialias=true"
-                       ,"xft:Noto Color Emoji:pixelsize=13:Regular" ]
+   -- font            = "xft:Noto Sans CJK SC:pixelsize=15:Bold:antialias=true" 
+   -- font            = "xft:MiriamMonoCLM:pixelsize=16:Bold:antialias=true" 
+   -- font            = "xft:JetBrainsMono Nerd Font:pixelsize=13:Bold:antialias=true" 
+     font            = "xft:Font Awesome 5 Free Solid:pixelsize=20:Solid:antialias=true,JetBrainsMono Nerd Font:pixelsize=11:Bold:antialias=true"
+   , additionalFonts = ["xft:MesloLGL Nerd Font:pixelsize=20:Regular:antialias=true"
+                       ,"xft:Font Awesome 5 Free Solid:pixelsize=20:Solid:antialias=true"
+                       ,"xft:Noto Color Emoji:pixelsize=20:Regular" ]
    , bgColor         = "#000000"
    , alpha           = 127
    , fgColor         = "white"
@@ -25,9 +25,9 @@ Config {
   -- , border        = BottomB
   -- , position      = Top 
   -- , position        = Static { xpos = 0 , ypos = 0, width = 1830, height = 20 }
-   , position = Static { xpos = 1920 , ypos = 0, width = 1366, height = 19 }
+   , position = Static { xpos = 1920 , ypos = 0, width = 1915, height = 30 }
    , borderColor     = "#646464"
-   , iconRoot        = "/home/steven/.xmonad/xpm" -- default: "."
+   , iconRoot        = "$HOME/.xmonad/xpm" -- default: "."
 
    -- layout
    
@@ -132,7 +132,7 @@ Config {
 
                                         ] 10
         -- trayer padding
-        , Run Com "/home/steven/.config/xmobar/padding-icon.sh" ["panel"] "trayerpad" 10
+        , Run Com "$HOME/.config/xmobar/padding-icon.sh" ["panel"] "trayerpad" 10
 
         ]
    }
